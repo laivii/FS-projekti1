@@ -1,5 +1,7 @@
 var http = require('http');
+var express = require('express');
 var fs = require('fs');
+var app = express();
 
 Guestbook();
 
@@ -21,4 +23,10 @@ function Guestbook() {
         res.write("</table>");
         res.end();
     }).listen(8080);
+}
+
+function Routes() {
+    app.get("/", function(req, res){
+        res.send("Hello world!");
+    });
 }
