@@ -7,11 +7,11 @@ function formatTable() {
     var tiedot = JSON.parse(data);
 
     var table = `
-    <table id="guestbook">
+    <table class="pure-table pure-table-horizontal">
         <tr>
-            <th> Username </th>
-            <th> Country </th>
-            <th> Message </th>
+            <th>Username</th>
+            <th>Country</th>
+            <th>Message</th>
         </tr>`;
 
     for(let i = 0; i < tiedot.length; i++){
@@ -30,16 +30,16 @@ function formatTable() {
     return table;
 }
 
-
 app.get('/', function(req, res) {
     var contents = fs.readFileSync('./public/index.html');
     res.send(contents.toString());
 });
 
 app.get('/guestbook', function(req, res) {
-    var contents = fs.readFileSync('./public/guestbook.html', 'utf8');
+    var header = fs.readFileSync('./public/guestbook.html', 'utf8');
     var table = formatTable();
-    res.send(contents + table);
+    var tail = "</body></html>";
+    res.send(header + table + tail);
 });
 
 app.get('/newmessage', function(req, res) {
