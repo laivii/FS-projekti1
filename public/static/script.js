@@ -1,6 +1,6 @@
 //Tänne kaikki frontti koodi ei main.js
 
-document.getElementById("form-submit").addEventListener("click", displayInfo);
+document.getElementById("form-submit").addEventListener("click",);
 
 function ajax(){
     var xhr = new XMLHttpRequest();
