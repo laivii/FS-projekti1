@@ -1,8 +1,13 @@
 * { box-sizing: border-box;}
 
 body {
-    background-color: #FFC0BD;
-    width: 80%;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
     margin-left: auto;
     margin-right: auto;
 }

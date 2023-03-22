@@ -8,11 +8,14 @@ function formatTable() {
 
     var table = `
     <table class="pure-table pure-table-horizontal">
-        <tr>
-            <th>Username</th>
-            <th>Country</th>
-            <th>Message</th>
-        </tr>`;
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Country</th>
+                <th>Message</th>
+            </tr>
+        <thead>
+        <tbody>`;
 
     for(let i = 0; i < tiedot.length; i++){
         var henkilö = tiedot[i];
@@ -25,7 +28,7 @@ function formatTable() {
         </tr>`;
     }
 
-    table += "</table>"
+    table += "</tbody></table>"
 
     return table;
 }
