@@ -30,6 +30,8 @@ function formatTable() {
     return table;
 }
 
+app.use(express.static('./public/static/'));
+
 app.get('/', function(req, res) {
     var contents = fs.readFileSync('./public/index.html');
     res.send(contents.toString());
