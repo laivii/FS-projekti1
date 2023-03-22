@@ -4,7 +4,7 @@ document.getElementById("form-submit").addEventListener("click", loadInfo);
 
 function loadInfo() {
     alert ("Hello World!");
-  }
+}
 
 function ajax(){
     var xhr = new XMLHttpRequest();
