@@ -3,10 +3,31 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale-1">
 	</head>
 	<body>
+        <form class="pure-form pure-form-aligned">
+            <fieldset>
+                <div class="pure-control-group">
+                    <label for="aligned-name">Username</label>
+                    <input type="text" id="aligned-name" placeholder="Username" />
+                </div>
+                <div class="pure-control-group">
+                    <label for="aligned-country">Country</label>
+                    <input type="text" id="aligned-country" placeholder="Country" />
+                </div>
+                <div class="pure-control-group">
+                    <label for="aligned-message">Message</label>
+                    <input type="text" id="aligned-message" placeholder="Enter your message here..." />
+                </div>
+                <div class="pure-controls">
+                    <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+        <!--
         <form action="" style="display: block;">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="Username" size="15" maxlength="12" required><br>
@@ -29,6 +50,6 @@
             <textarea name="message" id="message" cols="50" rows="10" placeholder="Write your message here..." style="resize: none;"></textarea>
             
             <input type="submit" value="Submit">
-        </form>
+        </form>-->
 	</body>
 </html>
