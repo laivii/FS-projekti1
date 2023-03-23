@@ -3,7 +3,14 @@
 document.getElementById("form-submit").addEventListener("click", loadInfo);
 
 function loadInfo() {
-    alert ("Hello World!");
+    var username = document.getElementById("aligned-name").value;
+    console.log(username);
+
+    var country = document.getElementById("aligned-country").value;
+    console.log(country);
+
+    var message = document.getElementById("aligned-message").value;
+    console.log(country);
 }
 
 function ajax(){
