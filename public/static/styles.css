@@ -1,7 +1,7 @@
 * { box-sizing: border-box;}
 
 body {
-    width: 60%;
+    
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -10,4 +10,9 @@ body {
 table {
     margin-left: auto;
     margin-right: auto;
+}
+
+#form-container {
+    width: 60%;
+    border: 1px solid black;
 }
