@@ -23,6 +23,3 @@ function ajax(){
 
     xhr.send(data);
 }
-
-var username = document.getElementById("username").value;
-console.log(username);
