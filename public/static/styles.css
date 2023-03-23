@@ -1,4 +1,5 @@
 * { box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Raleway:wght@500;600&display=swap');
 
 body {
     
@@ -12,7 +13,16 @@ table {
     margin-right: auto;
 }
 
+<<<<<<< HEAD
 #form-container {
     width: 60%;
     border: 1px solid black;
+}
+
+h1, li, #form-id {
+    font-family: 'Lora', serif;;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
 }
