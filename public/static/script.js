@@ -7,9 +7,9 @@ function loadInfo() {
     var country = document.getElementById("aligned-country").value;
     var message = document.getElementById("aligned-message").value;
 
-    document.getElementById("demo").innerHTML = username;
-    document.getElementById("demo").innerHTML = country;
-    document.getElementById("demo").innerHTML = message;
+    document.getElementById("info1").innerHTML = username;
+    document.getElementById("info2").innerHTML = country;
+    document.getElementById("info3").innerHTML = message;
 }
 
 function ajax(){
