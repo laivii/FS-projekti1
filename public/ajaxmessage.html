@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale-1">
 	</head>
 	<body>
-        <h1>Ajax message</h1>
+        <h1>AJAX MESSAGE</h1>
 
 		<div class="pure-menu pure-menu-horizontal">
 			<ul class="pure-menu-list">
@@ -27,25 +27,27 @@
 			</ul>
 		</div>
 
-		<form class="pure-form pure-form-aligned" id="form-id">
-            <fieldset>
-                <div class="pure-control-group" id="username">
-                    <label for="aligned-name">Username</label>
-                    <input type="text" id="aligned-name" name="username" placeholder="Username" />
-                </div>
-                <div class="pure-control-group pure-u-1-2" id="country">
-                    <label for="aligned-country">Country</label>
-                    <input type="text" id="aligned-country" name="country" placeholder="Country" />
-                </div>
-                <div class="pure-control-group pure-u-1-2" id="message">
-                    <label for="aligned-message">Message</label>
-                    <input class="pure-u-1-2" type="text" id="aligned-message" name="message" style="height: 100px; vertical-align: top;" placeholder="Enter your message here..." />
-                </div>
-                <div class="pure-controls">
-                    <button id="form-submit" type="submit" class="pure-button pure-button-primary">Submit</button>
-                </div>
-            </fieldset>
-        </form>
+			<form class="pure-form pure-form-aligned" id="form-id">
+				<fieldset>
+					<div class="pure-control-group" id="username">
+						<label for="aligned-name">Username</label>
+						<input class="pure-u-1-4" type="text" id="aligned-name" placeholder="Username" />
+					</div>
+					<div class="pure-control-group " id="country">
+						<label for="aligned-country">Country</label>
+						<input class="pure-u-1-4" type="text" id="aligned-country" placeholder="Country" />
+					</div>
+					<div class="pure-control-group " id="message">
+						<label for="aligned-message">Message</label>
+						<input class="pure-u-1-4" type="text" id="aligned-message" style="height: 100px; vertical-align: top;" placeholder="Enter your message here..." />
+					</div>
+					<div class="pure-controls">
+						<input id="form-submit" class="pure-button pure-button-active" placeholder="submit"></input>
+					</div>
+				</fieldset>
+			</form>	
+
+		<div id="table-container"></div>
 
 		<script src="/script.js"></script>
 	</body>

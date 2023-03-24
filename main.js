@@ -64,8 +64,6 @@ app.get('*', function(req, res) {
 });
 
 app.post('/newmessage', function(req, res) {
-    console.log(req.body);
-
     var viestit = fs.readFileSync('guestbook.json', 'utf8');
     
     var viestit_json = JSON.parse(viestit);
@@ -77,6 +75,20 @@ app.post('/newmessage', function(req, res) {
 
     res.set("location", "/guestbook");
     res.status(301).send()
+    return;
+});
+
+app.post('/ajaxmessage', function(req, res) {
+    var viestit = fs.readFileSync('guestbook.json', 'utf8');
+    
+    var viestit_json = JSON.parse(viestit);
+        viestit_json.push(req.body);
+
+    var viestit_str = JSON.stringify(viestit_json);
+
+    fs.writeFileSync('guestbook.json', viestit_str);
+
+    res.send(formatTable());
     return;
 });
 

@@ -1,13 +1,22 @@
 //Tänne kaikki frontti koodi ei main.js
+document.getElementById("form-submit").addEventListener("click", ajaxmessage);
 
-function ajax(){
+function ajaxmessage(){
+    //Getting values
+    let username = document.getElementById("aligned-name").value;
+    let country = document.getElementById("aligned-country").value;
+    let message = document.getElementById("aligned-message").value;
+
+
+    console.log(username, country, message);
+
     var xhr = new XMLHttpRequest();
     var url = "/ajaxmessage";
     xhr.open("POST", url, true);
-    xhr.setRequestHeader();
-    xhr.onreadystatechange(function () {
-        document.getElementById().innerHTML = xhr.response;
-    });
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onreadystatechange = function () {
+        document.getElementById("table-container").innerHTML = xhr.response;
+    };
 
     var data = JSON.stringify({
         "username" : username,

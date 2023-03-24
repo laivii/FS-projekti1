@@ -1,27 +1,37 @@
 * { box-sizing: border-box;}
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Raleway:wght@500;600&display=swap');
+
+@font-face {
+    font-family: 'VT323';
+    src: url('VT323-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url('IBMPlexMono-Regular.ttf');
+}
 
 body {
-    
+    font-family: 'IBM Plex Mono';
+    font-size: 20px;
     text-align: center;
+    background-color: #111;
+    color: white;
+}
+
+.pure-menu {
+    margin: 3% 0% 3% 0%;
+}
+
+table, body {
     margin-left: auto;
     margin-right: auto;
 }
 
-table {
-    margin-left: auto;
-    margin-right: auto;
+h1, th, .pure-menu{
+    font-family: 'VT323';
+    text-transform: uppercase;
 }
 
-#form-container {
-    width: 60%;
-    border: 1px solid black;
-}
-
-h1, li, #form-id {
-    font-family: 'Lora', serif;;
-}
-
-p {
-    font-family: 'Raleway', sans-serif;
+table, .pure-form{
+    font-size: 16px;
 }
