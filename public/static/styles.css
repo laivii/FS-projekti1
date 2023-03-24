@@ -1,8 +1,8 @@
 * { box-sizing: border-box;}
 
 @font-face {
-    font-family: 'VT323';
-    src: url('VT323-Regular.ttf');
+    font-family: 'Bangers';
+    src: url('Bangers-Regular.ttf');
 }
 
 @font-face {
@@ -28,8 +28,7 @@ table, body {
 }
 
 h1, th, .pure-menu{
-    font-family: 'VT323';
-    text-transform: uppercase;
+    font-family: 'Bangers';
 }
 
 table, .pure-form{
