@@ -22,7 +22,7 @@ body {
     margin: 3% 0% 3% 0%;
 }
 
-table, body {
+table, body, .halftone {
     margin-left: auto;
     margin-right: auto;
 }
@@ -37,4 +37,21 @@ table, .pure-form{
 
 h1 {
     color: #E5DC33;
+}
+
+.pure-menu-link:hover {
+    color: black;
+    background-color: #E5DC33;
+}
+
+th {
+    color: #555;
+}
+
+.pure-table thead {
+    background-color: lightblue;
+}
+
+.pure-table {
+    text-align: left;
 }

@@ -7,6 +7,25 @@ function ajaxmessage(){
     let country = document.getElementById("aligned-country").value;
     let message = document.getElementById("aligned-message").value;
 
+    if(username == "" && country == "" && message == ""){
+        alert("Invalid input! All the fields must be filled!")
+        return;
+    }
+
+    if (username == "") {
+        alert("Invalid input! Please state your username!")
+        return;
+    }
+
+    if (country == "") {
+        alert("Invalid input! Please state your country!")
+        return;
+    }
+
+    if (message == "") {
+        alert("Invalid input! Please write a message!")
+        return;
+    }
 
     console.log(username, country, message);
 
