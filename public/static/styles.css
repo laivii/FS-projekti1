@@ -6,12 +6,12 @@
 }
 
 @font-face {
-    font-family: 'IBM Plex Mono';
-    src: url('IBMPlexMono-Regular.ttf');
+    font-family: 'Komika';
+    src: url('komika.hand.ttf');
 }
 
 body {
-    font-family: 'IBM Plex Mono';
+    font-family: 'Komika';
     font-size: 20px;
     text-align: center;
     background-color: #111;
