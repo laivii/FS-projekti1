@@ -27,34 +27,25 @@
 			</ul>
 		</div>
 
-        <form class="pure-form pure-form-aligned" id="form-id">
+        <form action="/newmessage" class="pure-form pure-form-aligned" id="form-id" method="post">
             <fieldset>
                 <div class="pure-control-group" id="username">
                     <label for="aligned-name">Username</label>
-                    <input type="text" id="aligned-name" placeholder="Username" />
+                    <input type="text" id="aligned-name" name="username" placeholder="Username" />
                 </div>
                 <div class="pure-control-group pure-u-1-2" id="country">
                     <label for="aligned-country">Country</label>
-                    <input type="text" id="aligned-country" placeholder="Country" />
+                    <input type="text" id="aligned-country" name="country" placeholder="Country" />
                 </div>
                 <div class="pure-control-group pure-u-1-2" id="message">
                     <label for="aligned-message">Message</label>
-                    <input class="pure-u-1-2" type="text" id="aligned-message" style="height: 100px; vertical-align: top;" placeholder="Enter your message here..." />
+                    <input class="pure-u-1-2" type="text" id="aligned-message" name="message" style="height: 100px; vertical-align: top;" placeholder="Enter your message here..." />
                 </div>
                 <div class="pure-controls">
-                    <button id="form-submit" type="button" class="pure-button pure-button-primary">Submit</button>
+                    <button id="form-submit" type="submit" class="pure-button pure-button-primary">Submit</button>
                 </div>
-
-        <div class="pure-g">
-            <div class="pure-u-md-1-1
-                        pure-u-lg-1-2 pure-u-xl-1-4">
-                <p id="info1"></p>
-                <p id="info2"></p>
-                <p id="info3"></p>
-            </div>
-        </div>
-    </fieldset>
-</form>
+            </fieldset>
+        </form>
 
         <script src="/script.js"></script>
 	</body>

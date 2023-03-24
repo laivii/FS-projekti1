@@ -1,6 +1,8 @@
 var express = require('express');
 var fs = require('fs');
-var app = express();
+const app = express();
+    app.use(express.json());
+    app.use(express.urlencoded())
 
 function formatTable() {
     var data = fs.readFileSync('./guestbook.json', 'utf8');
@@ -59,6 +61,23 @@ app.get('/ajaxmessage', function(req, res) {
 
 app.get('*', function(req, res) {
     res.send("Can\'t find requested page");
+});
+
+app.post('/newmessage', function(req, res) {
+    console.log(req.body);
+
+    var viestit = fs.readFileSync('guestbook.json', 'utf8');
+    
+    var viestit_json = JSON.parse(viestit);
+        viestit_json.push(req.body);
+
+    var viestit_str = JSON.stringify(viestit_json);
+
+    fs.writeFileSync('guestbook.json', viestit_str);
+
+    res.set("location", "/guestbook");
+    res.status(301).send()
+    return;
 });
 
 app.listen(8080);
