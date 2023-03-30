@@ -22,7 +22,7 @@ body {
     margin: 3% 0% 3% 0%;
 }
 
-table, body, .halftone {
+table, body, .container {
     margin-left: auto;
     margin-right: auto;
 }
@@ -45,7 +45,7 @@ h1 {
 }
 
 th {
-    color: #555;
+    color: #111;
 }
 
 .pure-table thead {
@@ -54,4 +54,30 @@ th {
 
 .pure-table {
     text-align: left;
+}
+
+.container {
+    width: 30%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.username {
+    color: #E5DC33;
+}
+
+input {
+    background-color: #444;
+    color: #fff;
+}
+
+label {
+    color: lightblue;
+}
+
+.pure-button {
+    background-color: #E5DC33;
 }

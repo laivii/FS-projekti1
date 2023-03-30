@@ -1,8 +1,8 @@
 var express = require('express');
 var fs = require('fs');
 const app = express();
-    app.use(express.json());
-    app.use(express.urlencoded())
+      app.use(express.json());
+      app.use(express.urlencoded())
 
 function formatTable() {
     var data = fs.readFileSync('./guestbook.json', 'utf8');
@@ -24,7 +24,7 @@ function formatTable() {
 
         table += `
         <tr>
-            <td>${henkilö["username"]}</td>
+            <td class="username">${henkilö["username"]}</td>
             <td>${henkilö["country"]}</td>
             <td>${henkilö["message"]}</td>
         </tr>`;
@@ -72,6 +72,7 @@ app.post('/newmessage', function(req, res) {
     var viestit_str = JSON.stringify(viestit_json);
 
     fs.writeFileSync('guestbook.json', viestit_str);
+    console.log("posted newmessage");
 
     res.set("location", "/guestbook");
     res.status(301).send()
@@ -87,6 +88,7 @@ app.post('/ajaxmessage', function(req, res) {
     var viestit_str = JSON.stringify(viestit_json);
 
     fs.writeFileSync('guestbook.json', viestit_str);
+    console.log("posted ajaxmessage");
 
     res.send(formatTable());
     return;
